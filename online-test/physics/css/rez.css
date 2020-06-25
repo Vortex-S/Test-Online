@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+}
+ 
+ .main {
+	 text-align: left;
+        margin: 0 auto;
+        padding: 20px 0px;
+        /*position: relative;
+        background: #FCFCFC;*/
+        border: 1px solid #dedede;
+        /*box-shadow: 0 1px 5px #D9D9D9,inset 0 10px 20px #F1F1F1;
+        border-radius: 10px 10px 10px 10px;*/
+        width: 600px;
+    }
+	
+	#zag {
+		text-align: center;
+		font-weight: 600;
+		color: #369ACA;
+		font-size: 24px;
+		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+		margin-top: -10px;
+		margin-bottom: 5px;
+	}
+	
+	progress {
+		/* Отключаем стиль (как правило, не требуется, но на всякий случай)  */
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		/* Убираем границы по умолчанию в Firefox и Opera */
+		border: none;
+		/* Чтобы фоновое изображение в Safari работало, как надо */
+		background-size: auto;
+		width: 580px;
+		height: 25px;
+		margin-left: 2%;
+}
+progress::-webkit-progress-bar {
+background: #E9ECEF;
+border: 0;
+border-radius: 2px;
+}
+
+progress::-webkit-progress-value {
+background: #007BFF;
+border: 0;
+border-radius: 2px;
+}
+
+#potv, #npotv {
+	border-radius: 7px;
+	margin-left: 10px;
+	font-size: 14px;
+	padding: 4px 12px;
+	width: 160px;
+    margin-top: 15px;
+	line-height: 20px;
+    color: #fff;
+   text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: #5EBC5E;
+	background-image: linear-gradient(to bottom,#62c462,#51a351);
+    background-repeat: repeat-x; /* repeat */
+    border: 1px solid #ccc;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-bottom-color: #b3b3b3;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+}
+
+#npotv {
+	margin-right: 10px;
+	margin-top: -30px;
+	float: right;
+	background-color: #D32323;
+	background-image: linear-gradient(to bottom,#D32323,#D32323);
+}
+
+#answers {
+	font-size: 18px;
+	font-weight: 600;
+	margin: 10px;
+	padding: 10px;
+	background: #E9ECEF;
+	border-radius: 20px;
+}

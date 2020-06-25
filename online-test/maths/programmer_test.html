@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.js" 
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<title>Тест по математике</title>
+<link rel="stylesheet" href="css/progr_test.css">
+</head>
+<body>
+<form id="forma" action="result.php" method="POST">
+<div class="questions" id="vopros1" style="display:block;">
+<p>Укажи последовательность чисел, составленную по правилу: «Каждое следующее число на 8 меньше предыдущего»</p>
+ <input name="vop1" type="hidden" value="Укажи последовательность чисел, составленную по правилу: «Каждое следующее число на 8 меньше предыдущего»">
+ <div class="btns" data-id="1" >
+    <label><input name="q1" type="radio" value="a">a) 100, 92, 84, 80;</label><br>
+    <label><input name="q1" type="radio" value="b">b) 90, 82, 80, 72;</label><br>	
+    <label><input name="q1" type="radio" value="c">c) 72, 64, 56, 48;</label>
+	<div class="errordiv">Выберите ответ!</div>
+ </div>
+</div>
+<div class="questions" id="vopros2" style="display:none;">
+    <p>Какой из перечисленных предметов имеет форму шара?</p>
+	<input name="vop2" type="hidden" value="Какой из перечисленных предметов имеет форму шара?">
+	 <div class="btns" data-id="2">
+    <label><input name="q2" type="radio"  value="a">a) Колесо</label> <br>
+    <label><input name="q2" type="radio" value="b">b) Арбуз</label><br>
+    <label><input name="q2" type="radio" value="c">c) Ведро</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>	
+</div>
+<div class="questions" id="vopros3" style="display:none;">
+<input name="vop3" type="hidden" value="Участок имеет длину 13 м и ширину 6 м. Какой длины надо установить ограждение вокруг участка?">
+    <p>Участок имеет длину 13 м и ширину 6 м. Какой длины надо установить ограждение вокруг участка?</p>
+	 <div class="btns" data-id="3">
+    <label><input name="q3" type="radio" value="a">a) 78</label> <br>
+    <label><input name="q3" type="radio" value="b">b) 38</label><br>
+    <label><input name="q3" type="radio" value="c">c) 19</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros4" style="display:none;">
+<input name="vop4" type="hidden" value="Пакет сока стоит 32 гривны. Если купить на 200 грн наибольшее количество пакетов сока, какая сумма сдачи останется?">
+    <p> Пакет сока стоит 32 гривны. Если купить на 200 грн наибольшее количество пакетов сока, какая сумма сдачи останется?</p>
+	 <div class="btns" data-id="4">
+    <label><input name="q4" type="radio" value="a">a) 6 грн</label> <br>
+    <label><input name="q4" type="radio" value="b">b) 192 грн</label><br>
+    <label><input name="q4" type="radio" value="c">c) 8 грн</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros5" style="display:none;">
+<input name="vop5" type="hidden" value=" Катер был в пути 50 мин. В какое время он прибыл в пункт назначения, если отошёл от пристани в 9ч 40 мин?">
+    <p> Катер был в пути 50 мин. В какое время он прибыл в пункт назначения, если выехал в 9ч 40 мин?</p>
+	 <div class="btns" data-id="5">
+    <label><input name="q5" type="radio" value="a">a) 10ч 40 мин</label> <br>
+    <label><input name="q5" type="radio" value="b">b) 10ч 30 мин</label><br>
+    <label><input name="q5" type="radio" value="c">c) 11ч 10 мин</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros6" style="display:none;">
+<input name="vop6" type="hidden" value="Бабушка  испекла  30  пирожков.  Каждый  из  трех  братьев  взял  по  4 пирожка. Сколько пирожков осталось?">
+    <p>Бабушка  испекла  30  пирожков.  Каждый  из  трех  братьев  взял  по  4 пирожка. Сколько пирожков осталось?</p>
+	 <div class="btns" data-id="6">
+    <label><input name="q6" type="radio" value="a">a) 15</label> <br>
+    <label><input name="q6" type="radio" value="b">b) 21</label><br>
+    <label><input name="q6" type="radio" value="c">c) 18</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros7" style="display:none;">
+<input name="vop7" type="hidden" value="Сколько будет: 7+3*(8+12)">
+    <p>Сколько будет: 7+3*(8+12)</p>
+	 <div class="btns" data-id="7">
+    <label><input name="q7" type="radio" value="a">a) 67</label> <br>
+    <label><input name="q7" type="radio" value="b">b) 200</label><br>
+    <label><input name="q7" type="radio" value="c">c) 68</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros8" style="display:none;">
+<input name="vop8" type="hidden" value="Во сколько начались занятия спортивной секции, если они длились 1 час 30 минут и закончились в 17 часов 15 минут?">
+    <p>Во сколько начались занятия спортивной секции, если они длились 1 час 30 минут и закончились в 17 часов 15 минут?</p>
+	 <div class="btns" data-id="8">
+    <label><input name="q8" type="radio" value="a">a) 14ч 25м</label> <br>
+    <label><input name="q8" type="radio" value="b">b) 15ч 45м</label><br>
+    <label><input name="q8" type="radio" value="c">c) 15ч 30м</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros9" style="display:none;">
+<input name="vop9" type="hidden" value="Решите уравнение: 966 : х = 21">
+    <p>Решите уравнение: 966 : х = 21</p>
+	 <div class="btns" data-id="9">
+    <label><input name="q9" type="radio" value="a">a) х = 46</label> <br>
+    <label><input name="q9" type="radio" value="b">b) х = 74</label><br>
+    <label><input name="q9" type="radio" value="c">c) х = 44</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros10" style="display:none;">
+<input name="vop10" type="hidden" value="Укажите цифру, обозначающую старший разряд в записи числа 1584">
+    <p>Укажите цифру, обозначающую старший разряд в записи числа 1584</p>
+	 <div class="btns" data-id="10">
+    <label><input name="q10" type="radio" value="a">a) 1</label> <br>
+    <label><input name="q10" type="radio" value="b">b) 4</label><br>
+    <label><input name="q10" type="radio" value="c">c) 15</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<button id="kn_sl" type="button" onclick="sled_vopr();">Следующий</button>
+<button id="kn_pd" type="button" style="display:none" onclick="pred_vopr();">Предыдущий</button>
+<button id="kn_rez"  type="submit" style="display:none;">Результат</button>
+ <style type="text/css">
+        label{
+            padding: 5px;
+           background-color: #f5f5f5;
+            border-radius: 3px;
+            width: 200px;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+        }
+    
+        .active{
+            background-color: orange;
+			  
+        }
+    </style>
+<script type="text/javascript">
+      $(document).ready(function(){						// смена цвета кнопки при клике
+            $('input[type=radio]').click(function(){
+				var id_question = $(this).closest(".btns").data('id'); // Находит ближайщего родителя в DOM структуре исходя из кликнутого инпута и вытаскиваем с него data-id для дальнейшего очищения всех активных инпутов в пределах этого блока
+                $('.btns[data-id="'+id_question+'"]').find('label').removeClass('active'); // del active class всех инпутов из блока вопроса class="btns" data-id="10"
+                $(this).parent().addClass('active'); // + active class родителю, то есть label
+            });
+        });
+	$("#forma").submit(function(){ 						// проверка выбран ли вариант ответа
+    var errors = 0;
+$("div.btns").each(function() {
+  if ($(this).children("label").children("input:radio:checked").length==0) {
+  $(this).children(".errordiv").show(); 				//возращает и выводит все что внутри класса
+  errors++;
+  }
+}); 
+if (errors!=0) alert('Ответьте на все вопросы!');
+if(errors!=0) return false; 							//Если errors = 0, форма отправляется, если нет - не отправляется.
+});
+$(":radio").click(function(){
+if ($(this).closest("label").siblings(".errordiv")){   //Скрыть ошибку если вариант выбран
+$(this).closest("label").siblings(".errordiv").hide();
+}
+});
+    </script>
+<script>
+function sled_vopr(){
+    if(document.getElementById('vopros9').style.display == "block"){ <!--В первом условии мы проверяем отображается ли второй вопрос, если да, то его нужно скрыть и отобразить третий вопрос и также нужно скрыть саму кнопку переключения между вопросами теста и показать кнопку "Проверить" так как этот вопрос последний. Во втором условии мы проверяем отображается ли первый вопрос теста. Если это так, то нужно его скрыть и показать второй вопрос. -->
+        document.getElementById('vopros9').style.display = "none";
+        document.getElementById('vopros10').style.display = "block"; 
+		document.getElementById('kn_sl').style.display = "none";
+		 document.getElementById('kn_pd').style.display = "block";
+        document.getElementById('kn_rez').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros8').style.display == "block"){
+        document.getElementById('vopros8').style.display = "none";
+        document.getElementById('vopros9').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros7').style.display == "block"){
+        document.getElementById('vopros7').style.display = "none";
+        document.getElementById('vopros8').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros6').style.display == "block"){
+        document.getElementById('vopros6').style.display = "none";
+        document.getElementById('vopros7').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros5').style.display == "block"){
+        document.getElementById('vopros5').style.display = "none";
+        document.getElementById('vopros6').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros4').style.display == "block"){
+        document.getElementById('vopros4').style.display = "none";
+        document.getElementById('vopros5').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros3').style.display == "block"){
+        document.getElementById('vopros3').style.display = "none";
+        document.getElementById('vopros4').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+
+	 if(document.getElementById('vopros2').style.display == "block"){
+        document.getElementById('vopros2').style.display = "none";
+        document.getElementById('vopros3').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+    if(document.getElementById('vopros1').style.display == "block"){
+        document.getElementById('vopros1').style.display = "none";
+        document.getElementById('vopros2').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+}
+function pred_vopr(){
+	if (document.getElementById('vopros2').style.display == "block"){
+		document.getElementById('vopros2').style.display = "none";
+        document.getElementById('vopros1').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "none";
+		}
+	if (document.getElementById('vopros3').style.display == "block"){
+		document.getElementById('vopros3').style.display = "none";
+        document.getElementById('vopros2').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros4').style.display == "block"){
+		document.getElementById('vopros4').style.display = "none";
+        document.getElementById('vopros3').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros5').style.display == "block"){
+		document.getElementById('vopros5').style.display = "none";
+        document.getElementById('vopros4').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros6').style.display == "block"){
+		document.getElementById('vopros6').style.display = "none";
+        document.getElementById('vopros5').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros7').style.display == "block"){
+		document.getElementById('vopros7').style.display = "none";
+        document.getElementById('vopros6').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros8').style.display == "block"){
+		document.getElementById('vopros8').style.display = "none";
+        document.getElementById('vopros7').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros9').style.display == "block"){
+		document.getElementById('vopros9').style.display = "none";
+        document.getElementById('vopros8').style.display = "block";
+		}
+	
+	if (document.getElementById('vopros10').style.display == "block"){
+		document.getElementById('vopros10').style.display = "none";
+        document.getElementById('vopros9').style.display = "block";
+		document.getElementById('kn_sl').style.display = "block";
+		 document.getElementById('kn_rez').style.display = "none";
+		}		
+}
+</script>
+</form>
+</body>
+</html>

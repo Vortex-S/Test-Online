@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.4.1.js" 
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" 
+crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<title>Тест по физике</title>
+<link rel="stylesheet" href="css/progr_test.css">
+</head>
+<body>
+<form id="forma" action="result.php" method="POST">
+<div class="questions" id="vopros1" style="display:block;">
+<p>Какая жидкость самая легкая?</p>
+ <input name="vop1" type="hidden" value="Какая жидкость самая легкая?">
+ <div class="btns" data-id="1" >
+    <label><input name="q1" type="radio" value="a">a) Жидкий водород</label><br>
+    <label><input name="q1" type="radio" value="b">b) Перекись водорода</label><br>	
+    <label><input name="q1" type="radio" value="c">c) Горячая вода</label>
+	<div class="errordiv">Выберите ответ!</div>
+ </div>
+</div>
+<div class="questions" id="vopros2" style="display:none;">
+    <p>Кто создал первый паровой двигатель в мире?</p>
+	<input name="vop2" type="hidden" value="Кто создал первый паровой двигатель в мире?">
+	 <div class="btns" data-id="2">
+    <label><input name="q2" type="radio"  value="a">a) Иван Иванов</label> <br>
+    <label><input name="q2" type="radio" value="b">b) Иван Ползунов</label><br>
+    <label><input name="q2" type="radio" value="c">c) Илон Маск</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>	
+</div>
+<div class="questions" id="vopros3" style="display:none;">
+<input name="vop3" type="hidden" value="Чему равна скорость света?">
+    <p>Чему равна скорость света?</p>
+	 <div class="btns" data-id="3">
+    <label><input name="q3" type="radio" value="a">a) 150000 км/c</label> <br>
+    <label><input name="q3" type="radio" value="b">b) 300000 км/c</label><br>
+    <label><input name="q3" type="radio" value="c">c) 220000 км/c</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros4" style="display:none;">
+<input name="vop4" type="hidden" value="Как называется наименьшая порция энергии излучаемой светом?">
+    <p> Как называется наименьшая порция энергии излучаемой светом?</p>
+	 <div class="btns" data-id="4">
+    <label><input name="q4" type="radio" value="a">a) Квант</label> <br>
+    <label><input name="q4" type="radio" value="b">b) Молекула</label><br>
+    <label><input name="q4" type="radio" value="c">c) Атом</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros5" style="display:none;">
+<input name="vop5" type="hidden" value=" Какой температуре по шкале Цельсия соответствует абсолютный ноль?">
+    <p> Какой температуре по шкале Цельсия соответствует абсолютный ноль?</p>
+	 <div class="btns" data-id="5">
+    <label><input name="q5" type="radio" value="a">a) -270C</label> <br>
+    <label><input name="q5" type="radio" value="b">b) -170C</label><br>
+    <label><input name="q5" type="radio" value="c">c) -273C</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros6" style="display:none;">
+<input name="vop6" type="hidden" value="Что тяжелее - килограмм гвоздей или килограмм ваты?">
+    <p>Что тяжелее - килограмм гвоздей или килограмм ваты?</p>
+	 <div class="btns" data-id="6">
+    <label><input name="q6" type="radio" value="a">a) Килограмм ваты</label> <br>
+    <label><input name="q6" type="radio" value="b">b) Килограмм гвоздей</label><br>
+    <label><input name="q6" type="radio" value="c">c) Одинаково тяжелые</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros7" style="display:none;">
+<input name="vop7" type="hidden" value="Какой термометр появился первым?">
+    <p>Какой термометр появился первым?</p>
+	 <div class="btns" data-id="7">
+    <label><input name="q7" type="radio" value="a">a) Термометр Фаренгейта</label> <br>
+    <label><input name="q7" type="radio" value="b">b) Термометр Цельсия</label><br>
+    <label><input name="q7" type="radio" value="c">c) Термометр Энштейна</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros8" style="display:none;">
+<input name="vop8" type="hidden" value="Единица работы называется...">
+    <p>Единица работы называется...</p>
+	 <div class="btns" data-id="8">
+    <label><input name="q8" type="radio" value="a">a) Ньютон</label> <br>
+    <label><input name="q8" type="radio" value="b">b) Джоуль</label><br>
+    <label><input name="q8" type="radio" value="c">c) Моль</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros9" style="display:none;">
+<input name="vop9" type="hidden" value="Кто первым дал определение скорости?">
+    <p>Кто первым дал определение скорости?</p>
+	 <div class="btns" data-id="9">
+    <label><input name="q9" type="radio" value="a">a) Галилей</label> <br>
+    <label><input name="q9" type="radio" value="b">b) Аристотель</label><br>
+    <label><input name="q9" type="radio" value="c">c) Ньютон</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<div class="questions" id="vopros10" style="display:none;">
+<input name="vop10" type="hidden" value="Спидометр автомобиля показывает...">
+    <p>Спидометр автомобиля показывает...</p>
+	 <div class="btns" data-id="10">
+    <label><input name="q10" type="radio" value="a">a) Мгновенную скорость</label> <br>
+    <label><input name="q10" type="radio" value="b">b) Среднюю скорость</label><br>
+    <label><input name="q10" type="radio" value="c">c) Ускорение</label>
+	<div class="errordiv">Выберите ответ!</div>
+	</div>
+</div>
+<button id="kn_sl" type="button" onclick="sled_vopr();">Следующий</button>
+<button id="kn_pd" type="button" style="display:none" onclick="pred_vopr();">Предыдущий</button>
+<button id="kn_rez"  type="submit" style="display:none;">Результат</button>
+ <style type="text/css">
+        label{
+            padding: 5px;
+           background-color: #f5f5f5;
+            border-radius: 3px;
+            width: 200px;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+        }
+    
+        .active{
+            background-color: orange;
+			  
+        }
+    </style>
+<script type="text/javascript">
+      $(document).ready(function(){						// смена цвета кнопки при клике
+            $('input[type=radio]').click(function(){
+				var id_question = $(this).closest(".btns").data('id'); // Находит ближайщего родителя в DOM структуре исходя из кликнутого инпута и вытаскиваем с него data-id для дальнейшего очищения всех активных инпутов в пределах этого блока
+                $('.btns[data-id="'+id_question+'"]').find('label').removeClass('active'); // del active class всех инпутов из блока вопроса class="btns" data-id="10"
+                $(this).parent().addClass('active'); // + active class родителю, то есть label
+            });
+        });
+	$("#forma").submit(function(){ 						// проверка выбран ли вариант ответа
+    var errors = 0;
+$("div.btns").each(function() {
+  if ($(this).children("label").children("input:radio:checked").length==0) {
+  $(this).children(".errordiv").show(); 				//возращает и выводит все что внутри класса
+  errors++;
+  }
+}); 
+if (errors!=0) alert('Ответьте на все вопросы!');
+if(errors!=0) return false; 							//Если errors = 0, форма отправляется, если нет - не отправляется.
+});
+$(":radio").click(function(){
+if ($(this).closest("label").siblings(".errordiv")){   //Скрыть ошибку если вариант выбран
+$(this).closest("label").siblings(".errordiv").hide();
+}
+});
+    </script>
+<script>
+function sled_vopr(){
+    if(document.getElementById('vopros9').style.display == "block"){ <!--В первом условии мы проверяем отображается ли второй вопрос, если да, то его нужно скрыть и отобразить третий вопрос и также нужно скрыть саму кнопку переключения между вопросами теста и показать кнопку "Проверить" так как этот вопрос последний. Во втором условии мы проверяем отображается ли первый вопрос теста. Если это так, то нужно его скрыть и показать второй вопрос. -->
+        document.getElementById('vopros9').style.display = "none";
+        document.getElementById('vopros10').style.display = "block"; 
+		document.getElementById('kn_sl').style.display = "none";
+		 document.getElementById('kn_pd').style.display = "block";
+        document.getElementById('kn_rez').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros8').style.display == "block"){
+        document.getElementById('vopros8').style.display = "none";
+        document.getElementById('vopros9').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros7').style.display == "block"){
+        document.getElementById('vopros7').style.display = "none";
+        document.getElementById('vopros8').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros6').style.display == "block"){
+        document.getElementById('vopros6').style.display = "none";
+        document.getElementById('vopros7').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros5').style.display == "block"){
+        document.getElementById('vopros5').style.display = "none";
+        document.getElementById('vopros6').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros4').style.display == "block"){
+        document.getElementById('vopros4').style.display = "none";
+        document.getElementById('vopros5').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+	if(document.getElementById('vopros3').style.display == "block"){
+        document.getElementById('vopros3').style.display = "none";
+        document.getElementById('vopros4').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+
+	 if(document.getElementById('vopros2').style.display == "block"){
+        document.getElementById('vopros2').style.display = "none";
+        document.getElementById('vopros3').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+	
+    if(document.getElementById('vopros1').style.display == "block"){
+        document.getElementById('vopros1').style.display = "none";
+        document.getElementById('vopros2').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "block";
+    }
+}
+function pred_vopr(){
+	if (document.getElementById('vopros2').style.display == "block"){
+		document.getElementById('vopros2').style.display = "none";
+        document.getElementById('vopros1').style.display = "block";
+		 document.getElementById('kn_pd').style.display = "none";
+		}
+	if (document.getElementById('vopros3').style.display == "block"){
+		document.getElementById('vopros3').style.display = "none";
+        document.getElementById('vopros2').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros4').style.display == "block"){
+		document.getElementById('vopros4').style.display = "none";
+        document.getElementById('vopros3').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros5').style.display == "block"){
+		document.getElementById('vopros5').style.display = "none";
+        document.getElementById('vopros4').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros6').style.display == "block"){
+		document.getElementById('vopros6').style.display = "none";
+        document.getElementById('vopros5').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros7').style.display == "block"){
+		document.getElementById('vopros7').style.display = "none";
+        document.getElementById('vopros6').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros8').style.display == "block"){
+		document.getElementById('vopros8').style.display = "none";
+        document.getElementById('vopros7').style.display = "block";
+		}
+		
+	if (document.getElementById('vopros9').style.display == "block"){
+		document.getElementById('vopros9').style.display = "none";
+        document.getElementById('vopros8').style.display = "block";
+		}
+	
+	if (document.getElementById('vopros10').style.display == "block"){
+		document.getElementById('vopros10').style.display = "none";
+        document.getElementById('vopros9').style.display = "block";
+		document.getElementById('kn_sl').style.display = "block";
+		 document.getElementById('kn_rez').style.display = "none";
+		}		
+}
+</script>
+</form>
+</body>
+</html>
