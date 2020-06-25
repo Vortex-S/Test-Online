@@ -102,33 +102,7 @@ a:active {
 	padding-right: 385px;
 }
 
-/* Вылазка Воча */
-
-.Vochahil { 
-    position:absolute; 
-    margin:36% 88%; 
-    display: block;
-}
-
-.Vochahil img { 
-    left: 0; 
-    position:absolute; 
-    top: 0; 
-}
-
-.Vochahil img.raz {opacity:0;filter:alpha(opacity=0); /* alpha для IE */
-}
-.Vochahil:hover img.raz {opacity:1;filter:alpha(opacity=100);
-	transform: rotate(-10deg); /* Наклон */
-}
-.Vochahil:hover img.dva, .Vochahil img.dva:hover {opacity:0;filter:alpha(opacity=0);
-	transform: rotate(-15deg);
-	transition: all 1s ease;
-}
-
-
-
-/* News */	
+/* Tests */	
 
 #wrapper {
 	float: left;
@@ -286,21 +260,6 @@ hr {
 	transition: all.3s ease;
 }
 
-
-.zacherk {
-	text-decoration: line-through; /* Зачеркнутый текст */
-}
-
-#acter {
-	list-style-image: url(../images/spisok.png); /* Маркер списка */
-	list-style-position: inside; /* Маркер внутри текста */
-	margin-left: 45%;
-}
-
-#acter li {
-	padding: 5px;
-}
-
 /* О нас */
 
 #color1 {
@@ -345,315 +304,11 @@ hr {
 	margin-left: 10px;
 }
 
-/* Стили для форм */
-
-form {
-	width: 60%;
-	margin-left: 38%;
-	float: left;
-	font-size: 20px;
-}
-
-form input {
-	border: 3px solid silver;
-	border-radius: 5px;
-	float: left;
-	padding: 5px;
-	clear: both; /* Запрещено обтекание слева/справа */
-	margin-bottom: 10px;
-	width: 40%;
-	font-size: 20px;
-}
-
-form input:focus, form textarea:focus {
-	border: 3px solid #717171;
-}
-
-form label {
-	color: white;
-	width: 100%;
-	float: left;
-	margin-bottom: 5px;
-}
-
-form textarea {
-	width: 40%;
-	float: left;
-	clear: both;
-	background-color: #fafafa;
-	border: 3px solid silver;
-	border-radius: 5px;
-	padding: 5px;
-	height: 80px;
-	font-size: 20px;
-	resize: none;
-}
-
-form #send {
-	float: left;
-	padding: 10px;
-	padding-bottom: 15px;
-	margin-top: 15px;
-	cursor: pointer;
-	width: 42%;
-	background-color: red;
-	border-radius: 5px;
-	font-size: 2em;
-	color: white;
-	font-family: Comic Sans MS, sans-serif;
-}
-
-form #send:focus {
-	background-color: aqua;
-	transition: all.3s ease;
-}
-
-/* Стили для статей */
-
-#statya {
-	color: white;
-}
-
-#statya h2 {
-	margin-bottom: 10px;
-}
-
-#statya p {
-	width: 45%;
-	line-height: 25px;
-}
-
-#statya img {
-	margin: 10px;
-	border-radius: 10px;
-	cursor: default;
-}
-
-#comments {
-	margin-top: 40px;
-	float: left;
-	width: 80%;
-	margin-left: -30px;
-}
-
-#comments label {
-	margin-bottom: 10px;	
-	font-style: italic; /* Курсив */
-}
-
-#comment {
-	width: 540px;
-	height: 40px;
-	float: left;
-	clear: both;
-	background-color: #fafafa;
-	border: 3px solid silver;
-	border-radius: 5px;
-	padding: 5px;
-	font-size: 20px;
-	font-family: Comic Sans Ms,sans-serif;
-}
-
-#comment:focus {
-	height: 80px;
-	border: 3px solid #717171;
-	transition: all.3s ease;
-}
-
-#Submit_comm {
-	float: right;
-	margin-top: 50px;
-	margin-right: 80px;
-	cursor: pointer;
-	width: 30%;
-	background-color: red;
-	border-radius: 5px;
-	font-size: 1.5em;
-	color: white;
-	font-family: Comic Sans MS, sans-serif;
-}
-
-#Submit_comm:focus {
-	background-color: aqua;
-	transition: all.3s ease;
-}
-
-/* Контакты */
-
-#mapa {
-	width: 600px;
-	height: 450px;
-	float: right;
-	border: 0;
-}
-
-#contact {
-	color: white;
-	font-size: 30px;
-	float: left;
-	margin: 10px 0px 0px 300px;
-}
-
-#contact p {
-	padding-bottom: 35px;
-	padding-top: 15px;
-}
-
-#contact a {
-	font-size: 30px;
-}
-
-/* Долги */
-#zag {
-	color: white;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-table, th, td {
-	color: white;
-	border:  1px solid silver;
-}
-
-table {
-	width: 600px;
-	text-align: center; 
-	border-collapse: collapse ; /* Объеденить рамки, стороны ячеек */
-	font-size: 20px;
-	background-color: #7AC142; 
-	margin: 0 auto; /* таблица по центру */
-	/* vertical-align: top; вертикальное выравнивание */
-}
-
-th, td {
-	padding: 5px;
-	border: 3px solid white; 
-}
-th
-{
-	background-color: #6BC128; 
-}
-
 #articles h1 {
 	text-align:  center;
 	color: white;
 	margin: 20px 0;
 }
-
-#formDebt .edit {
-width: 275px;
-margin-left: -115px;
-}
-
-#formDebt textarea{
-	position: absolute;
-	height: 120px;
-	left: 1070px;
-}
-
-/* Films */
-
-#clip1 {
-	margin: 10px 0 10px 185px;
-	width: 560px;
-	height: 315px;
-}
-
-#clip2 {
-	margin: 10px 0 10px 30px;
-	width: 560px;
-	height: 315px;
-}
-
-/* Games */
-
-#play {
-	padding: 5px;
-	margin-right: 4%;
-	background-color: #3BD33B;
-	border-radius: 3px;
-	float: right;
-}
-
-#play:hover {
-	background-color: lime;
-}
-
-.imageGames:hover{
-	opacity: 0.5;
-}
-
-#Thor {
-	position: fixed; /* зафиксировать изобрание */
-	width: 231px;  /* z-index: 1; один элемент поверх другого 2>1 */
-	height: 400px;
-	left: 0;
-	top: 485px;
-}
-
-#Thor img {
-	border: none;
-	width: 231px;
-	height: 400px;
-}
-
-/* Magazine */
-
-#zag_shop {
-	border-bottom: 1px solid white;
-	padding-bottom: 20px;
-	text-align: center;
-	width: 100%;
-}
-
-.product_block {
-	width: 270px;
-	height: 400px;
-	display: inline-block;
-	margin: 0 0 10px 21px;
-	overflow: hidden;
-	border: 3px solid silver;
-	border-radius: 6px;
-}
-
-.product_block img {
-	width: 280px;
-	height: 300px;
-	float: left;
-	border-bottom: 2px solid silver;
- -webkit-transform: scale(1,1);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 550ms;
-    -moz-transform: scale(1,1);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 550ms;
-
-}
-
-
-.product_block img:hover { 
-  -webkit-transform: scale(1.1,1.1);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 550ms;
-    -moz-transform: scale(1.1,1.1);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 550ms;
-}
-
-.product_text {
-	font-family: Comic Sans Ms, sans-serif;
-	color: black;
-	text-align: center;
-	line-height: 2.2;
-	font-size: 20px;
-	background-color: white;
-}
-
-.product_text hr {
-	width: 30px;
-	margin: 0 auto;
-}
-
 
 /* Оптимизация */
 
@@ -675,16 +330,8 @@ display: inline-grid;
 } 
 .header-menu-center>menu>li{ 
 list-style-type: none; /* Внешний вид маркера */
-
 } 
-.header-auth-right{ 
-display: inline; 
-float: right;  
-}
 
-.header-auth-right a {
-	margin-right: 10px;
-}
 a {
 	font-size: 12px;
 }
@@ -763,141 +410,18 @@ a {
 	float: left;
 	margin-left: 10px;
 }
-#mapa {
-	width: 350px;
-	height: 250px;
-	float: right;
-	border: 0;
-}
 
-#contact {
-	color: white;
-	font-size: 15px;
-	float: left;
-	margin: 0px auto;
-}
-
-#contact p {
-	padding-bottom: 5px;
-	padding-top: 3px;
-}
-
-#contact a {
-	font-size: 15px;
-}
 form {
 	width: 100%;
 	margin-left: 30%;
 	float: left;
 	font-size: 20px;
 }
+
 .imageNews {
 	width: 100%;
 }
-#comments {
-	margin-top: 40px;
-	float: left;
-	width: 80%;
-	margin-left: -30px;
-}
 
-#comments label {
-	margin-bottom: 10px;
-	margin-left: -105px;
-}
-
-#comment {
-	margin-left: -105px;
-}
-
-#Submit_comm {
-	margin-right: 35px;
-	width: 40%;
-}
 footer, #footer-bottom:after {
 	height: 60px;
-}
-
-/* Вылазка Воча */
-
-.Vochahil { 
-    position:absolute; 
-    margin:91% 89%; 
-    display: block;
-}
-
-.Vochahil img {
-	width: 80px;
-   	height: 80px;
-}
-
-/* Debt */
-
-#formDebt .edit {
-width: 275px;
-margin-left: -180px;
-}
-
-#formDebt textarea{
-	position: absolute;
-	height: 120px;
-	left: 570px;
-}
-
-/* Films */
-
-#zag_film {
-	font-size: 20px;
-}
-
-#clip1 {
-	margin: 5px 0 10px 50px;
-	width: 250px;
-	height: 169px;
-}
-
-#clip2 {
-	margin: 5px 0 10px 10px;
-	width: 250px;
-	height: 169px;
-}
-
-/* Games */
-
-#play {
-	padding: 2px;
-	margin-right: 4%;
-	border-radius: 3px;
-	margin-top: 30px;
-}
-
-#Thor {
-	position: fixed;
-	width: 87px;
-	height: 150px;
-	left: 0;
-	top: 162px;
-}
-
-#Thor img {
-	border: none;
-	width: 87px;
-	height: 150px;
-}
-
-/* Magazine */
-
-.product_block {
-	width: 170px;
-	height: 270px;
-}
-
-.product_block img {
-	width: 180px;
-	height: 200px;
-}
-
-.product_text {
-	font-size: 14px;
-}
 }
